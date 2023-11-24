@@ -26,7 +26,10 @@ const createUser = async (req: Request, res: Response) => {
     res.status(500).json({
       success: false,
       message: 'Internal server error',
-      error: err.message,
+      error: {
+        code: 404,
+        description: 'User not found!',
+      },
     });
   }
 };

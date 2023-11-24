@@ -40,7 +40,7 @@ export const validateUser = (
       message: 'Validation error',
       error: {
         code: 400,
-        description: error.errors,
+        description: error as any,
       },
     });
   }
@@ -60,7 +60,7 @@ export const validateOrder = (
       message: 'Validation error',
       error: {
         code: 400,
-        description: error.errors,
+        description: error as any,
       },
     });
   }
@@ -86,7 +86,7 @@ export const validateUserId = (
       message: 'Validation error',
       error: {
         code: 400,
-        description: error.message,
+        description: error as any,
       },
     });
   }
