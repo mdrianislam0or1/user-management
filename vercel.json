@@ -1,15 +1,16 @@
 {
   "version": 2,
+  "name": "user-management",
   "builds": [
     {
       "src": "dist/server.js",
-      "use": "@now/node"
+      "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "dist/server.js"
+      "dest": "/dist/server.js"
     }
   ]
 }
