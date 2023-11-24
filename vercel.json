@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "doctor-backend",
+  "name": "management-backend",
   "builds": [
     {
       "src": "/dist/server.js",
