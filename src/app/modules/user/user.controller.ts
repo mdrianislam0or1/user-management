@@ -5,7 +5,7 @@ const createUser = async (req: Request, res: Response) => {
   try {
     const { user: userData } = req.body;
     const result = await UserServices.createUserIntoDB(userData);
-    const userWithoutPassword = {
+    const userCreateResult = {
       userId: result.userId,
       username: result.username,
       fullName: result.fullName,
@@ -19,7 +19,7 @@ const createUser = async (req: Request, res: Response) => {
     res.status(200).json({
       success: true,
       message: 'User is created successfully',
-      data: userWithoutPassword,
+      data: userCreateResult,
     });
   } catch (err) {
     console.log(err);
@@ -40,7 +40,6 @@ const getAllUsers = async (req: Request, res: Response) => {
     const filteredUsers = result.map((user) => ({
       username: user.username,
       fullName: user.fullName,
-      password: user.password,
       age: user.age,
       email: user.email,
       address: user.address,
