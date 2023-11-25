@@ -1,7 +1,34 @@
-`All Api Routes`
+# User Management Application
+
+This is a simple user management application that allows you to perform CRUD operations on users and manage their orders.
+
+## Getting Started
+
+Follow these instructions to run the application on your local machine.
+
+### Prerequisites
+
+- Node.js and npm installed on your machine.
+
+### Installation
+
+1. Clone the repository to your local machine:
+
+   ```bash
+   git clone https://github.com/mdrianislam0or1/user-management
+   ```
+
+Install dependencies:
+
+`npm install`
+
+`Create a .env file with`
+
+- PORT=
+
+- DATABASE_URL=
 
 `Welcome to the Management-SOft API!`
-
 
 `POST /api/users`
 ![1](https://github.com/mdrianislam0or1/user-management/assets/67714964/70c22bef-f671-4dd0-bdb2-e5f9dfd365fd)
